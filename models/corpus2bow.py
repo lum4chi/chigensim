@@ -27,9 +27,9 @@ class Corpus2Bow(interfaces.TransformationABC):
             return self._apply(doc)
 
         # Appling transformation, return doc as a bag-of-words list
-        doc = list(doc) # if doc is an iterable, read all to be processed more than once
-        grouped = self._dict.doc2bow(doc, self._allow_update) # = [(id, freq),...]
+        doc = list(doc)  # if doc is an iterable, read all to be processed more than once
+        grouped = self._dict.doc2bow(doc, self._allow_update)   # = [(id, freq),...]
         result = grouped if self._grouped \
-            else [self._dict.token2id[w] for w in doc if w in self._dict.token2id] # = [1, 2, 1, ...]
+            else [self._dict.token2id[w] for w in doc if w in self._dict.token2id]  # = [1, 2, 1, ...]
         if self.to_string: result = [str(r) for r in result]    # handy to chain with other text transformations
         return result
