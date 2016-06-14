@@ -6,6 +6,6 @@ from .bimmodel import BimModel
 from .bm25model import BM25Model
 from .qlmodel import QLModel
 from .corpus2 import Corpus2
-from .corpus2bow import Corpus2Bow
+from .corpus2dictionary import Corpus2Dictionary
 from .corpus2bob import Corpus2Bob
 from .corpus2ngrams import Corpus2Ngrams
