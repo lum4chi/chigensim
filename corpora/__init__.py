@@ -4,5 +4,5 @@
 # Copyright (C) 2016 Francesco Lumachi <francesco.lumachi@gmail.com>
 from .mongocorpus import MongoCorpus
 from .simplecorpus import SimpleCorpus
-
+from .rawcounter import RawCounter
 from .bidictionary import Bidictionary

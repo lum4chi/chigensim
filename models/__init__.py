@@ -9,3 +9,5 @@ from .corpus2 import Corpus2
 from .corpus2dictionary import Corpus2Dictionary
 from .corpus2bob import Corpus2Bob
 from .corpus2ngrams import Corpus2Ngrams
+from .corpusbydictionary import CorpusByDictionary
+from .corpusbycounter import CorpusByCounter
